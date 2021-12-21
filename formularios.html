@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+        <form id="formularioex" action="recibeform.html" method="post"
+        style= "border: 1px #000 solid; margin: 30px;padding: 30px; background-color: #f2f2f2;">
+            
+        <h2>Encabezado del formuario</h2>
+
+        <fieldset>
+            <legend>Introduce tus datos personales:</legend>
+
+            <div>
+                <input name="Nombre" id="nombreFormulario" pattern="[A-Za-z0-9]+" required type="text" placeholder="Introduce tu nombre"/>
+                <input name="Apellido" id="apellidoFormulario" pattern="[A-Za-z0-9]+" required type="text" placeholder="Introduce tu apellido"/>
+                <input name="e-mail" id="emailFormulario" required type="email" placeholder="Introduce tu e-mail"/>
+                <input name="Telefono" id="telefonoFormulario"  required= false type="tel" placeholder="Introduce tu número de teléfono"/>
+                <input name="Direccion" id="direccionFormulario" required= false pattern="[A-Za-z0-9]+" required type="text" placeholder="Introduce tu dirección"/>
+            </div>
+
+            <p></p>
+
+            <div>
+                <input type="submit" value="enviar formulario"/>
+            </div>
+        </fieldset>
+
+        </form>
+    </body>
